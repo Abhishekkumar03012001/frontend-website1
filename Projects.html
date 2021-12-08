@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+      
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style6.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     
+     <title>HOME | Abhishek kumar</title>
+   </head>
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bxs-planet icon'></i>
+        <div class="logo_name">Home</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+            <i class='bx bxs-home' ></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="AboutMe.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">About me</span>
+       </a>
+       <span class="tooltip">About me</span>
+     </li>
+     <li>
+        <a href="Skills.html">
+            <i class='bx bxs-keyboard'></i>
+          <span class="links_name">Skills</span>
+        </a>
+        <span class="tooltip">Skills</span>
+      </li>
+     <li>
+       <a href="Chat.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Let's chat</span>
+       </a>
+       <span class="tooltip">Let's chat</span>
+     </li>
+     <li>
+       <a href="Hobbies.html">
+        <i class='bx bx-music'></i>
+         <span class="links_name">Hobbies</span>
+       </a>
+       <span class="tooltip">Hobbies</span>
+     </li>
+     <li>
+       <a href="Projects.html">
+        <i class='bx bxs-planet'></i>
+         <span class="links_name">Projects</span>
+       </a>
+       <span class="tooltip">Projects</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bx-code-alt'></i>
+         <span class="links_name">Websites</span>
+       </a>
+       <span class="tooltip">Website</span>
+     </li>
+     <li>
+       <a href="#">
+        <i class='bx bxs-map' ></i>
+         <span class="links_name">Location</span>
+       </a>
+       <span class="tooltip">Track me</span>
+     </li>
+     <li class="profile">
+         <div class="profile-details">
+           
+           <div class="name_job">
+             <div class="name">Abhishek kumar</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+ 
+  
+  <script >
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+</body>
+</html>

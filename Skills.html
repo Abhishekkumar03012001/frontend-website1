@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="UTF-8">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="stylesheet" href="style3.css">
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>SKILLS | Abhishek kumar</title>
+   </head>
+   
+<body>
+  <div class="sidebar">
+    <div class="logo-details">
+        <i class='bx bxs-keyboard icon'></i>
+        <div class="logo_name">Skills</div>
+        <i class='bx bx-menu' id="btn" ></i>
+    </div>
+    <ul class="nav-list">
+      <li>
+          <i class='bx bx-search' ></i>
+         <input type="text" placeholder="Search...">
+         <span class="tooltip">Search</span>
+      </li>
+      <li>
+        <a href="index.html">
+            <i class='bx bxs-home' ></i>
+          <span class="links_name">Home</span>
+        </a>
+         <span class="tooltip">Home</span>
+      </li>
+      <li>
+       <a href="AboutMe.html">
+         <i class='bx bx-user' ></i>
+         <span class="links_name">About me</span>
+       </a>
+       <span class="tooltip">About me</span>
+     </li>
+     <li>
+        <a href="Skills.html">
+            <i class='bx bxs-keyboard'></i>
+          <span class="links_name">Skills</span>
+        </a>
+        <span class="tooltip">Skills</span>
+      </li>
+     <li>
+       <a href="Chat.html">
+         <i class='bx bx-chat' ></i>
+         <span class="links_name">Let's chat</span>
+       </a>
+       <span class="tooltip">Let's chat</span>
+     </li>
+     <li>
+       <a href="Hobbies.html">
+        <i class='bx bx-music'></i>
+         <span class="links_name">Hobbies</span>
+       </a>
+       <span class="tooltip">Hobbies</span>
+     </li>
+     <li>
+      
+     <li class="profile">
+         <div class="profile-details">
+           
+           <div class="name_job">
+             <div class="name">Abhishek kumar</div>
+             <div class="job">Web designer</div>
+           </div>
+         </div>
+         <i class='bx bx-log-out' id="log_out" ></i>
+     </li>
+    </ul>
+  </div>
+  
+  <span>
+  <div class="crd">
+    <div class="circle"></div>
+    <div class="content">
+      <h2>C++</h2>
+    <p>To communicate with machines who speak binary, we do so in a language that’s closer to our own natural language. I started with my coding journey with c++. ALong with knowledge in data structures and algorithms</p>
+    <a href="#">learn more</a>
+    </div>
+    
+    <img src="cpp.png" alt="">
+  </div>
+  <br>
+  <div class="crd">
+    <div class="circle"></div>
+    <div class="content">
+      <h2>Graphic designer</h2>
+    <p>I’m a graphic designer who believes project management software can be beautiful, fun and save me time!. i have a great experience in Adobe ILLustrator with a good hand in photoshop and blender.</p>
+    <a href="#">learn more</a>
+    </div>
+    <span>
+    <img src="illustrator.png" alt="">
+  </div>
+  </span>
+  <span>
+</div>
+<div class="crd">
+  <div class="circle"></div>
+  <div class="content">
+    <h2>Web Developer</h2>
+  <p>Learning to code is incredibly rewarding but can also be difficult and frustrating. The strongest assets you can have as a student are a desire to build, a problem-solving mind, and persistence in the face of setbacks.</p>
+  <a href="#">learn more</a>
+  </div>
+  
+  <img src="webdesign.png" alt="">
+</div>
+</div>
+<br>
+<div class="crd">
+  <div class="circle"></div>
+  <div class="content">
+    <h2>Technical works</h2>
+  <p>I know use of technical software such as onshape.I have used it many time to build projects on it.Along with it i have a nearly complete knowelge of car braking</p>
+  <a href="#">learn more</a>
+  </div>
+  
+  <img src="machine.png" alt="">
+</div>
+</span>
+
+  
+  <script>
+  let sidebar = document.querySelector(".sidebar");
+  let closeBtn = document.querySelector("#btn");
+  let searchBtn = document.querySelector(".bx-search");
+
+  closeBtn.addEventListener("click", ()=>{
+    sidebar.classList.toggle("open");
+    menuBtnChange();
+  });
+
+  searchBtn.addEventListener("click", ()=>{ 
+    sidebar.classList.toggle("open");
+    menuBtnChange(); 
+  });
+
+  function menuBtnChange() {
+   if(sidebar.classList.contains("open")){
+     closeBtn.classList.replace("bx-menu", "bx-menu-alt-right");
+   }else {
+     closeBtn.classList.replace("bx-menu-alt-right","bx-menu");
+   }
+  }
+  </script>
+</body>
+</html>
